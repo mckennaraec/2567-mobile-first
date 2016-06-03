@@ -1,6 +1,4 @@
 @charset "UTF-8";
-/* CSS Document */
-
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 
 /**
@@ -419,4 +417,5 @@ textarea {
 ::-webkit-file-upload-button {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
-}
+}/* CSS Document */
+

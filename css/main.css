@@ -1,10 +1,183 @@
 @charset "UTF-8";
 /* CSS Document */
 
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Typography
+	1.1 - Headings
+	1.2 - Body Copy
+	1.3 - Buttons
+	1.4 - Forms
+	1.5 - Lists
+	1.6 - Tables
+2.0 - Navigation Menus
+	3.1 - Main Menu
+	3.2 - Sub Menu
+	3.3 - Footer Menu
+3.0 - Content
+	3.1 - Site Structure
+	3.2 - Section Name
+	3.3 - Section Name
+4.0 - Media
+5.0 - Utility
+	5.1 - Background Colors
+	5.2 - Text Colors
+	5.3 - Text Sizes
+	5.4 - Alignments
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+1.0 - TYPOGRAPHY
+-------------------------------------------------------------- */
+
+
+
+/*--------------------------------------------------------------
+1.1 - BODY
+-------------------------------------------------------------- */
+
 html {
 	font-size: 12px;	
 }
 
+.description {
+	margin-top: -40px;
+	color: #3D3D3E;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 2.8rem;	
+}
+
+
+#address {
+	color: #4BB6EC;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5rem;
+	margin: 70px 0 0 18px;
+}
+
+.j-doe {
+	margin-top: -30px;
+	font-size: 1.3rem;	
+}
+
+/*--------------------------------------------------------------
+1.2 - HEADINGS
+-------------------------------------------------------------- */
+
+h1 {
+	margin-top: 150px;	
+	font-size: 9.6rem;
+	color: #061d2e;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#h1-text {
+	font-size: 3.1rem;
+	margin-top: -90px;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+	margin-top: 80px;	
+	font-size: 5rem;
+	color: #4BB6EC;
+	font-family: 'Montserrat', sans-serif;	
+}
+
+h3 {
+	margin-top: 40px;	
+	font-size: 4.2rem;
+ 	color: #3D3D3E;	
+ 	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+}
+
+h4 {
+	font-size: 2.3rem;
+	font-family: 'Montserrat', sans-serif;
+	color: #3D3D3E;	
+	margin-top: 380px;
+}
+
+
+/*--------------------------------------------------------------
+1.3 - BUTTONS
+-------------------------------------------------------------- */
+
+#button-one {
+	width: 350px;
+	height: 61px;
+	background-color: #4BB6EC;	
+    border-radius: 30px;
+	text-align: center;
+	font-size: 2.5rem;
+	padding-top: 13px;
+	text-transform:uppercase;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 120px;
+}
+
+#button-two{
+	width: 350px;
+	height: 61px;
+	background-color: #4BB6EC;	
+    border-radius: 30px;
+	text-align: center;
+	font-size: 2.5rem;
+	padding-top: 13px;
+	text-transform:uppercase;
+	font-family: 'Montserrat', sans-serif;
+	margin: -58px 0 0 720px;
+}
+
+/*--------------------------------------------------------------
+1.4 - FORMS
+-------------------------------------------------------------- */
+
+/*--------------------------------------------------------------
+1.5 - LISTS
+-------------------------------------------------------------- */
+
+li {
+	list-style-type:none;
+	display: inline-block;
+	padding: 10px 100px;	
+	font-size: 2.3rem;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/*--------------------------------------------------------------
+2.0 - MAIN MENU
+-------------------------------------------------------------- */
+
+a {
+	color: white;	
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+}
+
+a:hover {
+	color: #4bb6ec;	
+}
+
+nav {
+	width: 100%;
+	height: 15px;
+	margin: -140px 0 0 290px;	
+}
+
+#footer-nav {
+	margin-top: 3px;	
+}
+
+/*--------------------------------------------------------------
+3.0 - SITE STRUCTURE
+-------------------------------------------------------------- */
 *, *:after, *:before {
 	-webkit-box-sizing: border-box;	
 	-moz-box-sizing: border-box;	
@@ -26,7 +199,6 @@ img {
 	max-width: 100%;	
 }
 
-
 [class*='col-'] {
 	float: left;
 	padding-right: 20px;	
@@ -37,6 +209,10 @@ img {
 [class*='col-']:last-of-type {
 	padding-right: 0;	
 }
+
+/*--------------------------------------------------------------
+3.1 - SINGLE COLUMNS
+-------------------------------------------------------------- */
 
 .col-1-1 {
 	width: 100%;	
@@ -70,6 +246,349 @@ img {
 	width: 14.28%; 	
 }
 
+.col-1-8 {
+	width: 12.5%; 	
+}
+
+.col-1-9 {
+	width: 11.11%; 	
+}
+
+.col-1-10 {
+	width: 10%; 	
+}
+
+.col-1-11 {
+	width: 9.09%; 	
+}
+
+.col-1-12 {
+	width: 8.33%; 	
+}
+
+/*--------------------------------------------------------------
+3.2 - PARTIAL COLUMNS
+-------------------------------------------------------------- */
+
+.col-9-12 {
+	width: 91.67%;
+}
+/*--------------------------------------------------------------
+3.3 - SECTIONS
+-------------------------------------------------------------- */
+
+/*--------------------------------------------------------------
+4.0 - MEDIA
+-------------------------------------------------------------- */
+
+#logo {
+	width: 100%;
+	height: 150px;
+	background:url(../img/desktop-logo.png) no-repeat;
+	float: left;
+	margin-top: 30px;	
+}
+
+#image-one {
+	background:url(../img/image-one.jpg) no-repeat;
+	height: 360px;	
+	width: 100%;
+	margin-top: 50px;
+}
+
+#image-two {
+	background:url(../img/image-two.jpg) no-repeat;
+	height: 360px;	
+	width: 100%;
+	margin: -355px 0 0 720px;
+}
+
+#image-three {
+	background:url(../img/image-three.jpg) no-repeat;
+	height: 360px;	
+	width: 100%;
+	margin-top: 150px;
+}
+
+#image-four {
+	background:url(../img/image-four.jpg) no-repeat;
+	height: 360px;	
+	width: 100%;
+	margin: -375px 0 0 720px;
+}
+
+#studio-logo {
+	background:url(../img/desktop-logo.png) no-repeat;
+	height: 120px;
+	width: 100%;
+	padding-top: 50px;	
+}
+
+/*--------------------------------------------------------------
+5.0 - UTILITY
+-------------------------------------------------------------- */
+
+/*--------------------------------------------------------------
+5.1 - BG COLORS
+-------------------------------------------------------------- */
+
+#background-one {
+	width: 100%;
+	height: 186px;
+	background-color: #061d2e;	
+}
+
+#background-two {
+	width: 100%;
+	height: 800px;
+	background:url(../img/hero.jpg) no-repeat;	
+}
+
+#background-three {
+	width: 100%;
+	height: 1200px;
+	background-color: white;	
+}
+
+#background-four {
+	width: 100%;
+	height: 1700px;
+	background-color: #DAF4F5;	
+}
+
+#footer {
+	height: 335px;
+	width: 100%;
+	background-color: #061D2E;	
+}
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+
+	
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+/*--------------------------------------------------------------
+1.0 - TYPOGRAPHY
+-------------------------------------------------------------- */
+
+
+
+/*--------------------------------------------------------------
+1.1 - BODY
+-------------------------------------------------------------- */
+
+html {
+	font-size: 12px;	
+}
+
+.description {
+	margin-top: -20px;
+	color: #3D3D3E;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 1.4rem;	
+}
+
+
+#address {
+	color: #4BB6EC;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5rem;
+	margin: 70px 0 0 18px;
+}
+
+.j-doe {
+	margin-top: -30px;
+	font-size: 1.3rem;	
+}
+
+/*--------------------------------------------------------------
+1.2 - HEADINGS
+-------------------------------------------------------------- */
+
+h1 {
+	margin-top: 150px;	
+	font-size: 2.7rem;
+	color: #061d2e;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#h1-text {
+	font-size: 1.2rem;
+	margin-top: -30px;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+	margin-top: 80px;	
+	font-size: 2.4rem;
+	color: #4BB6EC;
+	font-family: 'Montserrat', sans-serif;	
+}
+
+h3 {
+	margin-top: 40px;	
+	font-size: 2rem;
+ 	color: #3D3D3E;	
+ 	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+}
+
+h4 {
+	font-size: 2.3rem;
+	font-family: 'Montserrat', sans-serif;
+	color: #3D3D3E;	
+	margin-top: 380px;
+}
+
+
+/*--------------------------------------------------------------
+1.3 - BUTTONS
+-------------------------------------------------------------- */
+
+#button-one {
+	width: 150px;
+	height: 35px;
+	background-color: #4BB6EC;	
+    border-radius: 30px;
+	text-align: center;
+	font-size: 1.3rem;
+	padding-top: 8px;
+	text-transform:uppercase;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 120px;
+}
+
+#button-two{
+	width: 150px;
+	height: 35px;
+	background-color: #4BB6EC;	
+    border-radius: 30px;
+	text-align: center;
+	font-size: 1.3rem;
+	padding-top: 8px;
+	text-transform:uppercase;
+	font-family: 'Montserrat', sans-serif;
+	margin: -33px 0 0 160px;
+}
+
+/*--------------------------------------------------------------
+1.4 - FORMS
+-------------------------------------------------------------- */
+
+/*--------------------------------------------------------------
+1.5 - LISTS
+-------------------------------------------------------------- */
+
+li {
+	list-style-type:none;
+	display: inline-block;
+	padding: 10px 80px;	
+	font-size: 1.3rem;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/*--------------------------------------------------------------
+2.0 - MAIN MENU
+-------------------------------------------------------------- */
+
+a {
+	color: white;	
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+}
+
+a:hover {
+	color: #4bb6ec;	
+}
+
+nav {
+	width: 100%;
+	height: 15px;
+	margin: -170px 0 0 150px;	
+}
+
+#footer-nav {
+	margin-top: 3px;	
+}
+
+/*--------------------------------------------------------------
+3.0 - SITE STRUCTURE
+-------------------------------------------------------------- */
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;	
+	-moz-box-sizing: border-box;	
+	box-sizing: border-box;
+}
+
+.wrapper {
+	width: 75%;
+	margin: 0 auto;	
+}
+
+.row:after {
+	content:"";
+	display: table;
+	clear:both;	
+}
+
+img {
+	max-width: 100%;	
+}
+
+[class*='col-'] {
+	float: left;
+	padding-right: 20px;	
+	margin-bottom: 20px;	
+	
+}
+
+[class*='col-']:last-of-type {
+	padding-right: 0;	
+}
+
+/*--------------------------------------------------------------
+3.1 - SINGLE COLUMNS
+-------------------------------------------------------------- */
+
+.col-1-1 {
+	width: 100%;	
+}
+
+.col-1-2 {
+	width: 50%;	
+}
+
+.col-1-3 {
+	width: 33.33%;	
+}
+
+.col-2-3 {
+	width: 66.66%;	
+}
+
+.col-1-4 {
+	width: 25%;	
+}
+
+.col-1-5 {
+	width: 20%;	
+}
+
+.col-1-6 {
+	width: 16.66%; 	
+}
+
 .col-1-7 {
 	width: 14.28%; 	
 }
@@ -94,419 +613,102 @@ img {
 	width: 8.33%; 	
 }
 
-a {
-	font-family: 'Lato', sans-serif;
-	text-transform: uppercase;
-	color: white;
-	text-decoration: none;
-	font-size: 1rem;
+/*--------------------------------------------------------------
+3.2 - PARTIAL COLUMNS
+-------------------------------------------------------------- */
+
+.col-9-12 {
+	width: 91.67%;
+}
+/*--------------------------------------------------------------
+3.3 - SECTIONS
+-------------------------------------------------------------- */
+
+/*--------------------------------------------------------------
+4.0 - MEDIA
+-------------------------------------------------------------- */
+
+#logo {
+	width: 100%;
+	height: 150px;
+	background:url(../img/desktop-logo.png) no-repeat;
+	float: left;
+	margin-top: 30px;	
 }
 
-a:hover {
-	color: #4bb6ec;	
+#image-one {
+	background:url(../img/image-one.jpg) no-repeat;
+	height: 360px;	
+	width: 100%;
+	margin-top: 50px;
 }
 
-li {
-	list-style-type:none;
-	display: inline-block;
-	padding: 0 11px;	
+#image-two {
+	background:url(../img/image-two.jpg) no-repeat;
+	height: 360px;	
+	width: 100%;
+	margin: -355px 0 0 720px;
 }
+
+#image-three {
+	background:url(../img/image-three.jpg) no-repeat;
+	height: 360px;	
+	width: 100%;
+	margin-top: 150px;
+}
+
+#image-four {
+	background:url(../img/image-four.jpg) no-repeat;
+	height: 360px;	
+	width: 100%;
+	margin: -375px 0 0 720px;
+}
+
+#studio-logo {
+	background:url(../img/desktop-logo.png) no-repeat;
+	height: 120px;
+	width: 100%;
+	padding-top: 50px;	
+}
+
+/*--------------------------------------------------------------
+5.0 - UTILITY
+-------------------------------------------------------------- */
+
+/*--------------------------------------------------------------
+5.1 - BG COLORS
+-------------------------------------------------------------- */
 
 #background-one {
 	width: 100%;
-	height: 76px;
+	height: 186px;
 	background-color: #061d2e;	
 }
 
 #background-two {
 	width: 100%;
-	height: 215px;
-	background:url(../img/hero.jpg);	
+	height: 600px;
+	background:url(../img/hero.jpg) no-repeat;	
 }
 
 #background-three {
 	width: 100%;
-	height: 406px;
-	background-color:white;	
+	height: 900px;
+	background-color: white;	
 }
 
 #background-four {
 	width: 100%;
-	height: 1318px;
-	background-color:#daf4f5;	
+	height: 1525px;
+	background-color: #DAF4F5;	
 }
 
-#background-five {
+#footer {
+	height: 335px;
 	width: 100%;
-	height: 138px;
-	background-color:#061d2e;	
+	background-color: #061D2E;	
 }
 
-#logo {
-	width: 83px;
-	height: 40px;
-	background:url(../img/logo.png);
-	float: left;
-	margin-top: 18px;
-}
-
-#nav {
-	width: 275px;
-	height: 15px;
-	float: right;
-	margin-top: 15px;	
-}
-
-#h1 {
-	float: left;
-	font-family: 'Lato', sans-serif;
-	font-size: 1.4rem;
-}
-
-#h1-text {
-	width:  200px;
-	margin-top: 7px;
-	font-family: 'Lato', sans-serif;
-}
-
-#button-one {
-	width:  110px;
-	height: 25px;
-	background-color: white;	
-	float: right;
-	margin-top: -62px;
-	font-family: 'Lato', sans-serif;
-	text-align: center;
-}
-
-#button-two {
-	width:  110px;
-	height: 25px;
-	background-color: white;	
-	float: right;
-	margin-top: -28px;
-	font-family: 'Lato', sans-serif;
-	text-align: center;
-}
-
-#work-header {
-	width:  67px;
-	height: 20px;
-	float: left;
-	font-family: 'Lato', sans-serif;
-}
-
-#subject-one {
-	height: 20px;
-	float: left;
-	margin: 30px 0 15px 0;
-	font-family: 'Lato', sans-serif;
-}
-
-#description-one {
-	width: 315px;
-	height: 22px;
-	float: left;
-	margin-top: 3px;
-	font-family: 'Lato', sans-serif;
-}
-
-#subject-two {
-	height: 20px;	
-	float: left;
-	margin-bottom: 15px;
-	font-family: 'Lato', sans-serif;
-}
-
-#description-two {
-	width: 315px;
-	height: 22px;	
-	float: left;
-	margin-top: 3px;
-	font-family: 'Lato', sans-serif;
-}
-
-#subject-three {
-	height: 20px;	
-	float: left;
-	margin-bottom: 15px;
-	font-family: 'Lato', sans-serif;
-}
-
-#description-three {
-	width: 315px;
-	height: 22px;	
-	float: left;
-	margin-top: 3px;
-	font-family: 'Lato', sans-serif;
-}
-
-#subject-four {
-	height: 20px;
-	float: left;
-	margin-bottom: 15px;
-	font-family: 'Lato', sans-serif;
-}
-
-#description-four {
-	width: 315px;
-	height: 22px;	
-	float: left;
-	margin-top: 3px;
-	font-family: 'Lato', sans-serif;
-}
-
-#about-header {
-	width:  67px;
-	height: 20px;
-	float: left;
-	font-family: 'Lato', sans-serif;
-}
-
-#our-team {
-	height: 20px;
-	float: left;
-	margin: 42px 0 8px 0;
-	font-family: 'Lato', sans-serif;
-}
-
-#our-team-description {
-	width:  315px;
-	height: 109px;
-	float: left;
-	font-family: 'Lato', sans-serif;
-}
-
-#image-one {
-	width: 180px;
-	height: 180px;
-	background:url(../img/image-one.jpg);
-	float: left;
-	margin:	52px 4px 0 0;
-}
-
-#name-one {
-	width: 103px;
-	float: left;
-	margin-top: 52px;	
-	font-family: 'Lato', sans-serif;
-}
-
-#d-one {
-	width: 140px;
-	height: 88px;
-	float: left;
-	margin-top: 3px;	
-	font-family: 'Lato', sans-serif;
-}
-
-#icon-one {
-	width: 23px;
-	height: 27px;
-	background:url(../img/facebook-icon.png);
-	float: left;
-	margin: 115px 0 0 -140px;
-}
-	
-#icon-two {
-	width: 23px;
-	height: 27px;
-	background:url(../img/twitter-icon.png);
-	float: left;
-	margin: 141px 0 0 -140px;
-}	
-
-#image-two {
-	width: 180px;
-	height: 180px;
-	background:url(../img/image-two.jpg);
-	float: left;
-	margin:	52px 4px 0 0;
-}
-
-#name-two {
-	width: 103px;
-	height: 16px;
-	float: left;
-	margin-top: 52px;
-	font-family: 'Lato', sans-serif;	
-}
-
-#d-two {
-	width: 140px;
-	height: 88px;
-	float: left;
-	margin-top: 3px;	
-	font-family: 'Lato', sans-serif;
-}
-
-#icon-one-two {
-	width: 23px;
-	height: 27px;
-	background:url(../img/facebook-icon.png);
-	float: left;
-	margin: 115px 0 0 -140px;
-}
-	
-#icon-two-two {
-	width: 23px;
-	height: 27px;
-	background:url(../img/twitter-icon.png);
-	float: left;
-	margin: 141px 0 0 -140px;
-}
-
-#image-three {
-	width: 180px;
-	height: 180px;
-	background:url(../img/image-three.jpg);
-	float: left;
-	margin:	52px 4px 0 0;
-}
-
-#name-three {
-	width: 103px;
-	height: 16px;
-	float: left;
-	margin-top: 52px;
-	font-family: 'Lato', sans-serif;	
-}
-
-#d-three {
-	width: 140px;
-	height: 88px;
-	float: left;
-	margin-top: 3px;	
-	font-family: 'Lato', sans-serif;
-}
-
-#icon-one-three {
-	width: 23px;
-	height: 27px;
-	background:url(../img/facebook-icon.png);
-	float: left;
-	margin: 115px 0 0 -140px;
-}
-	
-#icon-two-three {
-	width: 23px;
-	height: 27px;
-	background:url(../img/twitter-icon.png);
-	float: left;
-	margin: 141px 0 0 -140px;
-}
-
-#image-four {
-	width: 180px;
-	height: 180px;
-	background:url(../img/image-four.jpg);
-	float: left;
-	margin:	52px 4px 0 0;
-}
-
-#name-four {
-	width: 103px;
-	height: 16px;
-	float: left;
-	margin-top: 52px;	
-	font-family: 'Lato', sans-serif;
-}
-
-#d-four {
-	width: 140px;
-	height: 88px;
-	float: left;
-	margin-top: 3px;	
-	font-family: 'Lato', sans-serif;
-}
-
-#icon-one-four {
-	width: 23px;
-	height: 27px;
-	background:url(../img/facebook-icon.png);
-	float: left;
-	margin: 115px 0 0 -140px;
-}
-	
-#icon-two-four {
-	width: 23px;
-	height: 27px;
-	background:url(../img/twitter-icon.png);
-	float: left;
-	margin: 141px 0 0 -140px;
-}
-
-#footer-logo {
-	width: 83px;
-	height: 40px;
-	background:url(../img/logo.png);
-	float: left;
-	margin-top: 18px;
-}
-
-#footer-nav {
-	width: 275px;
-	height: 15px;
-	float: right;
-	margin-top: 34px;	
-}
-
-#address {
-	width: 81px;
-	height: 31px;
-	float: left;
-	margin-top: 23px;	
-	font-family: 'Lato', sans-serif;
-	color: white;	
-	font-size: .7rem;
-}
-
-@media screen and (max-width: 768px) {
-
-.col-1-4, .col-1-4:nth-child(2) {
-	width: 50%;	
-}
-
-.col-1-4:nth-child(2) {
-	padding-right: 0;	
-}
-	
-.col-1-5 {
-	width: 100%;	
-	padding-right: 0;
-}
-	
-.col-1-6 {
-	width: 33.33%;	
-}
-	
-.col-1-7 {
-	width: 100%;	
-}
-
-.col-1-8 {
-	width: 50%;	
-}
-
-.col-1-9 {
-	width: 100%;	
-}
-
-.col-1-10 {
-	width: 20%;	
-}
-
-.col-1-11 {
-	width: 100%;	
-}
-
-.col-1-12 {
-	width:30%;	
-}
-
-}
-
-@media screen and (max-width: 480px) {
 
 .col-1-4, .col-1-4:nth-child(2) {
 	width: 50%;	
